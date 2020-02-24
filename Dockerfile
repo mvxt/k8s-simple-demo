@@ -1,0 +1,7 @@
+FROM node:13.8.0-alpine3.11
+
+EXPOSE 8080
+
+COPY server.js .
+
+CMD [ "node", "server.js" ]

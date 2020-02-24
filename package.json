@@ -1,0 +1,9 @@
+{
+  "name": "k8s-simple-demo",
+  "version": "1.0.0",
+  "description": "Simple repo for kubernetes learning",
+  "main": "server.js",
+  "repository": "git@github.com:mvxt/k8s-simple-demo.git",
+  "author": "Michael V Thanh <mthanh@circleci.com>",
+  "license": "MIT"
+}
