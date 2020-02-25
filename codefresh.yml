@@ -91,7 +91,7 @@ steps:
     candidate:
       # The image that will replace the original deployment image 
       # The image that been build using Build step
-      image: "${{build_step}}"
+      image: "${{build}}"
       # The registry that the user's Kubernetes cluster can pull the image from
       # Codefresh will generate (if not found) secret and add it to the deployment so the Kubernetes master can pull it
       registry: "cfcr"
