@@ -77,7 +77,7 @@ steps:
     type: "deploy"
     kind: "kubernetes"
     ## cluster name as the shown in account's integration page
-    cluster: "mvxt-ccits-test-k8s-cluster" 
+    cluster: "CCITS" 
     # desired namespace
     namespace: "default"
     
