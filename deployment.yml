@@ -1,14 +1,23 @@
-# Web service for simple nodejs Hello World
-apiVersion: v1
-kind: Service
+# Deployment for simple nodejs Hello World
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: nodejs
   labels:
     app: nodejs
 spec:
-  ports:
-  - name: nodejs
-    port: 80
-  clusterIP: None
+  replicas: 1
   selector:
-    app: nodejs
+    matchLabels:
+      app: nodejs
+  template:
+    metadata:
+      labels:
+        app: nodejs
+    spec:
+      containers:
+      - name: nodejs-k8s-demo
+        image: mikeyvxt/nodejs-k8s-demo:latest
+        ports:
+        - containerPort: 8080
+
