@@ -82,7 +82,7 @@ steps:
     namespace: "default"
     
     ## Two ways to distinguish which deployment YAML to deploy - service or file_path:    
-    file_path: "./deployment.yml"
+    file_path: "./service.yml"
     # In seconds, how long the step will wait until the rolling update is complete (default is 120)
     timeout: '150'
     # Candidate is optional, if not specified will redeploy the same image that specified in the deployment file
